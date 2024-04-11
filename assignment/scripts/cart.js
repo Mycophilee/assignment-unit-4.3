@@ -10,17 +10,21 @@ function addItem(item) {
 basket.push(item);
 return true;
 }
-addItem('first item');
 
-function listItems(){
-    for(let newItems of basket){
-        
+addItem('Bread');
+addItem('Pickles');
+console.log(basket);
+
+function listItems(basketInput) {
+    for(let item of basketInput) {
+        console.log(item);
     }
 }
+listItems(basket);
 
-
-
-
+function empty() {
+    basket.length = 0;
+}
 
 
 
